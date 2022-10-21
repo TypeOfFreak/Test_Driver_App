@@ -8,7 +8,6 @@ import java.io.IOException;
  * Class that handles authentication w/ login credentials and retrieves user information.
  */
 public class LoginDataSource {
-//asdasda
     public Result<LoggedInUser> login(String username, String password) {
 
         try {
