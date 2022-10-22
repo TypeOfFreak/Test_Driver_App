@@ -23,6 +23,8 @@ import com.example.my_application.ui.login.LoginViewModel;
 import com.example.my_application.ui.login.LoginViewModelFactory;
 import com.example.my_application.databinding.ActivityLoginBinding;
 
+import java.io.FileInputStream;
+
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
