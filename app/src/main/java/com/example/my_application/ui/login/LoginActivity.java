@@ -3,6 +3,8 @@ package  com.example.my_application.ui.login;
 import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -19,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.my_application.R;
+import com.example.my_application.data.NavigatorActivity;
 import com.example.my_application.ui.login.LoginViewModel;
 import com.example.my_application.ui.login.LoginViewModelFactory;
 import com.example.my_application.databinding.ActivityLoginBinding;
@@ -99,6 +102,8 @@ private ActivityLoginBinding binding;
             @Override
             public void onClick(View v) {
                 loginViewModel.login(usernameEditText.getText().toString());
+                Intent intent = new Intent(getApplicationContext(), NavigatorActivity.class);
+                startActivity(intent);
             }
         });
     }
