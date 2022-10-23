@@ -2,6 +2,7 @@
     <string name="app_name">Driver\'s squedule</string>
     <!-- Strings related to login -->
     <string name="prompt_driver_id">Введите номер автобуса</string>
+    <string name="prompt_email">Я ЗДЕСЬ</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Продолжить</string>
     <string name="action_sign_in_short">Sign in</string>
@@ -10,5 +11,20 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_main">MainActivity</string>
-    <!-- Strings used for fragments for navigation -->
+    <!-- Strings related to current task -->
+    <string name="prompt_accept">Начать</string>
+    <string name="prompt_wait">Ожидайте</string>
+    <string name="prompt_status_waiting_next_task">Следующее задание начнётся в</string>
+    <string name="prompt_hh_mm">%1$d:%2$d</string>
+    <string name="place">%1$s %2$d</string>
+
+    <string name="current_action">Идёт %1$s</string>
+    <string name="boarding">посадка</string>
+    <string name="unboarding">высадка</string>
+    <string name="prompt_time_to_end">Она закончится в</string>
+    <string name="end_task">Завершить задание</string>
+
+    <string name="element_text">Element text</string>
+    
+    <string name="capacity">%1$d чел.</string>
 </resources>

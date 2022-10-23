@@ -25,4 +25,27 @@ public class Task {
         }
 
     }
+    public long GetStartTime(){
+        return start_Time.getTime();
+    }
+    public long GetBoardingStartTime(){
+        return start_Time.getTime();
+    }
+    public long GetBoardingEndTime(){
+        return start_Time.getTime();
+    }
+    public long GetArrivalTime(){
+        return start_Time.getTime();
+    }
+    public long GetEndTime(){
+        return end_Time.getTime();
+    }
+
+    public int GetStartPoint(){return 0;}
+    public int GetStopPoint(){return 1;}
+    public int GetEndPoint(){return 2;}
+
+    public String[] GetPath(){
+        return this.path;
+    }
 }

@@ -28,7 +28,7 @@ public class Schedule {
             BufferedReader bR = new BufferedReader(reader);
             String line;
             while((line = bR.readLine()) != null) {
-                String [] Task_info =  line.split(",");
+                String [] Task_info = line.split(",");
                 if (Task_info[0].equals(user.getUserId())) {
                     tasks.add(new Task(Task_info));
                 }

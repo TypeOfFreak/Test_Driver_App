@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 import android.util.Patterns;
 
 import com.example.my_application.data.LoginRepository;
-import com.example.my_application.data.NavigatorActivity;
+import com.example.my_application.MainActivity;
 import com.example.my_application.data.Result;
 import com.example.my_application.data.model.LoggedInUser;
 import com.example.my_application.R;
@@ -35,7 +35,7 @@ public class LoginViewModel extends ViewModel {
 
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
-            NavigatorActivity.init_Driver(data);
+            MainActivity.init_Driver(data);
             loginResult.setValue(new LoginResult(new LoggedInUserView(data.getUserId())));
         } else {
             loginResult.setValue(new LoginResult(R.string.login_failed));

@@ -20,8 +20,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.my_application.MainActivity;
 import com.example.my_application.R;
-import com.example.my_application.data.NavigatorActivity;
 import com.example.my_application.ui.login.LoginViewModel;
 import com.example.my_application.ui.login.LoginViewModelFactory;
 import com.example.my_application.databinding.ActivityLoginBinding;
@@ -37,8 +37,8 @@ private ActivityLoginBinding binding;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     binding = ActivityLoginBinding.inflate(getLayoutInflater());
-     setContentView(binding.getRoot());
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
@@ -102,7 +102,7 @@ private ActivityLoginBinding binding;
             @Override
             public void onClick(View v) {
                 loginViewModel.login(usernameEditText.getText().toString());
-                Intent intent = new Intent(getApplicationContext(), NavigatorActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
